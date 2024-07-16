@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  font-family: Arial, sans-serif;
+  background-image: url("https://res.cloudinary.com/doccuqzqe/image/upload/v1721117286/White_Abstract_Background_agzk0q.png") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  background: gray;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+ 
+}
+
+h1{
+  color: black;
+  text-align: center;
+}
+button {
+  background-color: black;
   color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #928D8D;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.p {
+  margin-top: 20px;
+  color:#5D5857 ;
+  text-align: center;
+}
+.Link{
+  text-decoration: none;
+
+}
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  input {
+    max-width: 100%;
   }
 }
